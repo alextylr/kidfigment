@@ -5,23 +5,27 @@ import { BrowserRouter, Switch, Route } from "react-router-dom"
 // My Components
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-import HomeGuest from "./components/HomeGuest"
-import Terms from "./components/Terms"
+import Contact from "./components/Contact"
+import Gallery from "./components/Gallery"
 import About from "./components/About"
+import Landing from "./components/Landing"
 
 function Main() {
   return (
     <BrowserRouter>
       <Header />
       <Switch>
-        <Route path="/" exact>
-          <HomeGuest></HomeGuest>
+        <Route path="/Contact" exact>
+          <Contact></Contact>
         </Route>
-        <Route path="/about-us" exact>
+        <Route path="/" exact>
+          <Landing></Landing>
+        </Route>
+        <Route path="/About" exact>
           <About></About>
         </Route>
-        <Route path="/terms" exact>
-          <Terms></Terms>
+        <Route path="/Gallery" exact>
+          <Gallery></Gallery>
         </Route>
       </Switch>
       <Footer />

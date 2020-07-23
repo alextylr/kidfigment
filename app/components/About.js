@@ -3,11 +3,8 @@ import Page from "./Page"
 
 function About() {
   return (
-    <Page title="About Us">
-      <h2>About Us</h2>
-      <p className="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum labore quisquam vel id dicta fuga! Ducimus, quo. Dolore commodi aliquid error veritatis consequuntur, excepturi cumque fuga eum incidunt doloremque?</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At qui enim rem totam voluptatum. Aut saepe temporibus, facilis ex a iste expedita minima dolorum dicta doloribus libero aliquid, quae maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit beatae eum, est soluta ducimus ratione et impedit sapiente, nihil, atque dignissimos adipisci? Totam atque officia quis voluptates sed veniam?</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates quisquam possimus tenetur, dicta enim rerum quis, quaerat id nobis provident quo dolorum sapiente temporibus facere non repellendus consequatur cupiditate!</p>
+    <Page title="About">
+      <h2 className="text-center">Annie Cobb is an interdisciplinary artist based in Wetumpka, Alabama. She creates illustrations that aim to evoke a childlike wonder within the viewer and communicate her passions through whimsical characters and exaggerated forms. She is currently attending Auburn University at Montgomery and pursuing a BFA.</h2>
     </Page>
   )
 }
