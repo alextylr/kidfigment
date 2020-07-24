@@ -1,12 +1,22 @@
-import React from "react"
-import Container from "./Container"
+import React, { useState } from "react"
 import Page from "./Page"
-import { render } from "react-dom"
 
-function Gallery() {
+function Gallery(props) {
+  const urls = ["../../img/apple-boy.jpg", "../../img/shot.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/warbat.jpg", "../../img/wyvern.jpg"]
+
+  function renderImage(imageUrl) {
+    return (
+      <>
+        <div className="col-md-4">
+          <img className="img-fluid" src={imageUrl} />
+        </div>
+      </>
+    )
+  }
+
   return (
     <Page title="Gallery">
-      <h2>Gallery</h2>
+      <div className="row">{urls.map((imageUrl) => renderImage(imageUrl))}</div>
     </Page>
   )
 }
