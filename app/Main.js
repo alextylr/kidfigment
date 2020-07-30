@@ -6,7 +6,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Contact from "./components/Contact"
-import Gallery from "./components/Gallery"
+import ImageGallery from "./components/ImageGallery"
 import About from "./components/About"
 import Landing from "./components/Landing"
 
@@ -24,8 +24,8 @@ function Main() {
         <Route path="/About" exact>
           <About></About>
         </Route>
-        <Route path="/Gallery" exact>
-          <Gallery></Gallery>
+        <Route path="/ImageGallery" exact>
+          <ImageGallery></ImageGallery>
         </Route>
       </Switch>
       <Footer />
